@@ -21,6 +21,6 @@ export class HomeComponent {
   userInput = ''
 
   onSubmit() {
-    this.apiService.hello(this.userInput);
+    this.apiService.submit(this.userInput);
   }
 }

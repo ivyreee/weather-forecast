@@ -16,7 +16,7 @@ export class ApiService {
 
   data = '';
 
-  hello(input: string) {
+  submit(input: string) {
     this.data = input
     this.router.navigate(['/weather'])
   }
