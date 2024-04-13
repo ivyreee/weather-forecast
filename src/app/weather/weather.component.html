@@ -7,12 +7,13 @@
     </ng-template>
 
     <table *ngIf="data; else noData" class="table table-striped table-hover">
+
         <thead>
-            <td>Date</td>
+            <td>{{ data.name }}</td>
         </thead>
         <tbody>
             <tr>
-                <th>mm/dd/yy</th>
+                <th>Date</th>
                 <th>Temp(F)</th>
                 <th>Description</th>
                 <th>Main</th>
@@ -20,7 +21,7 @@
                 <th>Humidity</th>
             </tr>
             <tr>
-                <td>{{ today | date:'mm/dd/yy' }}</td>
+                <td>{{ today | date:'MM/dd/yy' }}</td>
                 <td>{{ data.main.temp }}</td>
                 <td>{{ data.weather[0].description }}</td>
                 <td>{{ data.weather[0].main }}</td>

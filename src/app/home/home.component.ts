@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { AuthService } from '@auth0/auth0-angular';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-home',
@@ -12,11 +13,14 @@ import { AuthService } from '@auth0/auth0-angular';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  constructor(public auth: AuthService) { }
+  constructor(
+    public auth: AuthService,
+    public apiService: ApiService
+  ) { }
 
   userInput = ''
 
   onSubmit() {
-    console.log(this.userInput)
+    this.apiService.hello(this.userInput);
   }
 }
