@@ -5,13 +5,13 @@
         <a href="https://github.com/{{user.nickname}}">https://github.com/{{ user.nickname }}</a>
     </div>
 
-    <form>
+    <form (submit)="onSubmit()">
         <div class="py-3">
             <label for="city" class="visually-hidden">City</label>
-            <input type="text" class="form-control" id="city" placeholder="Search city">
+            <input type="text" class="form-control" placeholder="Search city" name="userInput" [(ngModel)]="userInput" required>
         </div>
         <div  class="py-1">
-            <button type="button" class="btn btn-primary mb-3" [routerLink]="['/weather']">Display Weather</button>
+            <button type="submit" class="btn btn-primary mb-3">Display Weather</button>
         </div>
     </form>
 
