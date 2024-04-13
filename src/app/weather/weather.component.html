@@ -15,18 +15,18 @@
             <tr>
                 <th>Date</th>
                 <th>Temp(F)</th>
-                <th>Description</th>
-                <th>Main</th>
-                <th>Pressure</th>
-                <th>Humidity</th>
+                <th class="d-none d-sm-table-cell">Description</th>
+                <th class="d-none d-sm-table-cell">Main</th>
+                <th class="d-none d-sm-table-cell">Pressure</th>
+                <th class="d-none d-sm-table-cell">Humidity</th>
             </tr>
             <tr>
                 <td>{{ today | date:'MM/dd/yy' }}</td>
                 <td>{{ data.main.temp }}</td>
-                <td>{{ data.weather[0].description }}</td>
-                <td>{{ data.weather[0].main }}</td>
-                <td>{{ data.main.pressure }}</td>
-                <td>{{ data.main.humidity }}</td>
+                <td class="d-none d-sm-table-cell">{{ data.weather[0].description }}</td>
+                <td class="d-none d-sm-table-cell">{{ data.weather[0].main }}</td>
+                <td class="d-none d-sm-table-cell">{{ data.main.pressure }}</td>
+                <td class="d-none d-sm-table-cell">{{ data.main.humidity }}</td>
             </tr>
         </tbody>
     </table>
