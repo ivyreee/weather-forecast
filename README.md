@@ -1,10 +1,6 @@
 ## Get started
 
-After cloning the repository, run `npm i`.
-Run `ng serve` for a dev server. 
-Navigate to `http://localhost:4200/`. 
-
-The application will automatically reload if you change any of the source files.
+After cloning the repository, run `npm i`. Next, run `ng serve` to run the dev server. Navigate to `http://localhost:4200/`.
 
 ------------------------------------------
 
